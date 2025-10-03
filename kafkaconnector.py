@@ -184,10 +184,9 @@ def main():
         help="Resume the connector")
     args = parser.parse_args()
 
-    env_id = os.environ.get("CFLT_ENV_ID", "env-8qo5q")
-    lkc_id = os.environ.get("CFLT_CLUSTER_ID", "lkc-ypyo6")
+    env_id = os.environ.get("CFLT_ENV_ID", "env-81234q")
+    lkc_id = os.environ.get("CFLT_CLUSTER_ID", "lkc-abab6")
     connectors = json.loads(os.environ.get("CFLT_CONNS"))
-    # ["czen-outbox-mysql-cdcs-v2", "czen-member-outbox-mysql-cdcs"]
 
     for name in connectors:
         if args.pause:
